@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <link rel="stylesheet" href="../../stable/css/evy.css" type="text/css">
+  <script src="../jquery-1.11.3.min.js"></script>
+  <script src="../../stable/js/evy.js"></script>
+  <script src="../scripts.js"></script>
+</head>
+<body>
+  <div class="e-container">
+    <h3 class="e-center">Tab menu</h3>
+    <div class="e-menu e-menu-tab">
+      <div class="e-menu-tabs">
+        <div class="e-item e-active" data-index="1">Tab 1</div>
+        <div class="e-item" data-index="2">Tab 2</div>
+        <div class="e-item" data-index="3">Tab 3</div>
+      </div>
+      <div class="e-menu-tabs-content">
+        <div class="e-item e-active" data-index="1">Contenido del tab 1</div>
+        <div class="e-item" data-index="2">Contenido del tab 2</div>
+        <div class="e-item" data-index="3">Contenido del tab 3</div>
+      </div>
+    </div>
+    <h3 class="e-center">Tab menu (Con ajax)</h3>
+    <p>Permite cargar una vista HTML mediante ajax.</p>
+    <div class="e-menu e-menu-tab">
+      <div class="e-menu-tabs">
+        <div class="e-item e-active" data-index="1" data-url="https://stackoverflow.com/questions/15005500/loading-cross-domain-endpoint-with-jquery-ajax">Tab 1</div>
+        <div class="e-item" data-index="2" data-url="tabs/tab2.html">Tab 2</div>
+        <div class="e-item" data-index="3" data-url="tabs/tab3.html">Tab 3</div>
+      </div>
+      <div class="e-menu-tabs-content">
+        <div class="e-item e-active" data-index="1"></div>
+        <div class="e-item" data-index="2"></div>
+        <div class="e-item" data-index="3"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

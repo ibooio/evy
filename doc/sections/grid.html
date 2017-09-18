@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../stable/css/evy.css" type="text/css">
+</head>
+<body>
+  <div class="e-container">
+    <h3 class="e-center">Nomenclatura</h3>
+    <ul>
+      <li><b>xs</b> representa Extra Small(pantallas con un acho menor a 480px)</li>
+      <li><b>sm</b> representa Small(pantallas con un acho mayor a 480px y menor a 768px)</li>
+      <li><b>md</b> representa Medium(pantallas con un acho mayor a 768px y menor a 1024px)</li>
+      <li><b>lg</b> representa Large(pantallas con un acho mayor a 1024px)</li>
+    </ul>
+    <h3 class="e-center">Sistema de Grid</h3>
+    <p>El sistema de grid permite ajustar el contenido a diferentes resoluciones de dispositivos</p>
+    <p>Consta de filas (<b>row</b>) que contienen columnas (<b>col</b>)</p>
+    <p>
+      Con <b>.e-row</b> o <b>.e-row-12</b> definimos una fila de doce espacios.<br>
+      Con <b>.e-row-10</b> definimos una fila de diez espacios<br>
+      Con <b>.e-row-14</b> definimos una fila de catorce espacios</p>
+    <p>Lo ideal es trabajar siempre con <b>.e-row</b> o <b>.e-row-12</b>. Las otras clases son de apoyo para casos muy particulares en que doce columnas no permiten lograr lo que buscamos, por ejemplo 7 columnas iguales(en este caso usariamos una fila de 14 espacios y cada columna ocuparía dos)</p>
+    <p>
+      Una columna siempre va acompañada de la cantidad de espacios que debe ocupar. Puede definirse una sola cantidad o una por tamaño de pantalla.<br>
+      Además, siempre debe indicarse el tamaño del ancho de pantalla a partir del cual se aplica.
+      <ul>
+        <li>Con <b>xs</b> se aplicará a todos los anchos de pantalla</li>
+        <li>Con <b>sm</b> se aplicará cuando el ancho esté entre 480px y 768px</li>
+        <li>Con <b>md</b> se aplicará cuando el ancho esté entre 768px y 1024px</li>
+        <li>Con <b>lg</b> se aplicará cuando el ancho sea mayor igual a 1024px</li>
+      </ul>
+    </p>
+    <p>
+      Para los ejemplos usaremos siempre filas de doce espacios (<b>.e-row</b> o <b>.e-row-12</b>).
+      <ul>
+        <li>Si queremos que un elemento ocupe todo el ancho disponible entonces serán 12 espacios de los 12(<b>.e-col-xs-12</b>)</li>
+        <li>Si queremos que un elemento ocupe la mitad de todo el ancho disponible entonces serán 6 espacios de los doce(<b>.e-col-xs-6</b>)</li>
+        <li>Si queremos que un elemento ocupe un tercio de todo el ancho disponible entonces serán 4 espacios de los doce(<b>.e-col-xs-4</b>)</li>
+      </ul>
+    </p>
+    <p>
+      Responsive<br><br>
+      Si queremos que un elemento ocupe el 100% en pantallas extra pequeñas(<b>xs</b>) y pequeñas(<b>sm</b>), el 50% en pantallas medianas(<b>md</b>) y el 33.3% en pantallas grandes(<b>lg</b>) deberemos aplicar:
+      <br><br>
+      <b>class="e-col-xs-12 e-col-sm-12 e-col-md-6 e-col-lg-4"</b>
+    </p>
+    <p>
+      Ejemplo<br><br>
+      <div class="e-row">
+        <div class="e-col-xs-12 e-col-sm-12 e-col-md-6 e-col-lg-4 e-bg-red">Celda 1 de 1</div>
+        <div class="e-col-xs-12 e-col-sm-12 e-col-md-6 e-col-lg-4 e-bg-green">Celda 2 de 1</div>
+        <div class="e-col-xs-12 e-col-sm-12 e-col-md-6 e-col-lg-4 e-bg-blue">Celda 3 de 1</div>
+      </div>
+      <div class="e-row">
+        <div class="e-col-xs-12 e-col-sm-12 e-col-md-6 e-col-lg-6 e-bg-pink">Celda 1 de 2</div>
+        <div class="e-col-xs-12 e-col-sm-12 e-col-md-6 e-col-lg-6 e-bg-teal">Celda 2 de 2</div>
+      </div>
+    </p>
+  </div>
+</body>
+</html>
