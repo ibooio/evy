@@ -1,0 +1,133 @@
+<div class="e-container">
+  <div class="e-font-0-8 e-center"> * Esta documentación se encuentra en curso</div>
+  <h3 class="e-center">Sobre Evy</h3>
+  <div class="e-content">
+    Evy es un toolkit front end compuesto de clases CSS y plugins jQuery. Funciona como soporte en el desarrollo de sitios webs.
+  </div>
+  <h3 class="e-center">Tamaños de pantalla</h3>
+  <div class="e-content">
+    <ul>
+      <li><b>xs</b> representa Extra Small(pantallas con un acho menor a 480px)</li>
+      <li><b>sm</b> representa Small(pantallas con un acho mayor a 480px y menor a 768px)</li>
+      <li><b>md</b> representa Medium(pantallas con un acho mayor a 768px y menor a 1024px)</li>
+      <li><b>lg</b> representa Large(pantallas con un acho mayor a 1024px)</li>
+    </ul>
+  </div>
+  <h3 class="e-center">Contenedores</h3>
+  <div class="e-content">
+    <p>
+      <b>.e-container</b> define una elemento centrado y con un ancho máximo de 1200px. Permite tener un límite cuando las pantallas son muy grandes.
+    </p>
+    <p>
+      <b>.e-content</b> define un elemento con un padding de 10px. Se utiliza como un simple contenedor de datos
+    </p>
+  </div>
+  <h3 class="e-center">Alineación</h3>
+  <div class="e-content">
+    <div class="e-left">Texto a la izquierda con <b>.e-left</b></div>
+    <div class="e-center">Texto al centro con <b>.e-center</b></div>
+    <div class="e-right">Texto a la derecha con <b>.e-right</b></div>
+  </div>
+  <h3 class="e-center">Tamaño de fuente</h3>
+  <div class="e-content">
+    <p>Existen tamaños de fuentes predefinidos desde <b>0.5em</b> a <b>5em</b>. Definidas cada <b>0.1em</b> hasta <b>2em</b> y cada <b>0.5em</b> desde allí.</p>
+    <p>Cada clase puede ser aplicada a todos los dispositivos (<b>.e-font-#numero</b>) o mediante las clases para diferenciar tamaños de pantalla (<b>.e-font-xs-#numero</b>, <b>.e-font-sm-#numero</b>, <b>.e-font-md-#numero</b>, <b>.e-font-lg-#numero</b>)</p>
+    <p>Algunos ejemplos aplicables a todas las pantallas(<b>.e-font</b> equivale a <b>.e-font-xs</b>)<br>
+      <span class="e-font-0-5">.e-font-0-5</span>
+      <span class="e-font-1">.e-font-1</span>
+      <span class="e-font-1-1">.e-font-1-1</span>
+      <span class="e-font-1-3">.e-font-1-3</span>
+      <span class="e-font-2-5">.e-font-2-5</span>
+      <span class="e-font-3">.e-font-3</span>
+      <span class="e-font-5">.e-font-5</span>
+    </p>
+    <p>Los siguientes textos solo aplicaran el tamaño definido en pantallas con ancho mayor a 480px y menor a 768px<br>
+      <span class="e-font-sm-0-5">.e-font-0-5</span>
+      <span class="e-font-sm-1">.e-font-1</span>
+      <span class="e-font-sm-1-1">.e-font-1-1</span>
+      <span class="e-font-sm-1-3">.e-font-1-3</span>
+      <span class="e-font-sm-2-5">.e-font-2-5</span>
+      <span class="e-font-sm-3">.e-font-3</span>
+      <span class="e-font-sm-5">.e-font-5</span>
+    </p>
+  </div>
+  <h3 class="e-center">Colores</h3>
+  <div class="e-content">
+    <p>Evy brinda una paleta de colores básica, basada en la de Semantic-UI</p>
+    <p>
+      <b>.e-#color</b> define #color como color de texto.
+    </p>
+    <p>
+      <b>.e-bg-#color</b> define #color como color de fondo.
+    </p>
+    <p>Colores disponibles
+      <ul>
+        <li class="e-red">red</li>
+        <li class="e-orange">Orange</li>
+        <li class="e-yellow">Yellow</li>
+        <li class="e-green">Green</li>
+        <li class="e-teal">Teal</li>
+        <li class="e-blue">Blue</li>
+        <li class="e-purple">Purple</li>
+        <li class="e-pink">Pink</li>
+        <li class="e-grey">Grey</li>
+        <li class="e-black">Black</li>
+        <li class="e-bg-black e-white">White</li>
+      </ul>
+    </p>
+  </div>
+  <h3 class="e-center">Botones</h3>
+  <div class="e-content">
+    <p>Brinda también clases para estilizar botones</p>
+    <p>Botón simple</p>
+    <p><div class="e-button">Soy un botón</div></p>
+    <p>Botones con colores</p>
+    <p>
+      <div class="e-button e-bg-red">Red</div>
+      <div class="e-button e-bg-orange">Orange</div>
+      <div class="e-button e-bg-yellow">Yellow</div>
+      <div class="e-button e-bg-green">Green</div>
+      <div class="e-button e-bg-teal">Teal</div>
+      <div class="e-button e-bg-blue">Blue</div>
+      <div class="e-button e-bg-purple">Purple</div>
+      <div class="e-button e-bg-pink">Pink</div>
+      <div class="e-button e-bg-grey">Grey</div>
+      <div class="e-button e-bg-black">Black</div>
+      <div class="e-button e-bg-white">White</div>
+    </p>
+    <p>Botones con íconos</p>
+    <p>
+      <div class="e-button sm"><i class="fa fa-automobile"></i></div>
+      <div class="e-button"><i class="fa fa-automobile"></i>  Button</div>
+      <div class="e-button e-bg-red"><i class="e-blue fa fa-automobile"></i> </span>  Red</div>
+    </p>
+    <p>Botón deshabilitado</p>
+      <div class="e-button e-disabled"><i class="fa fa-automobile"></i>  Button</div>
+    <p>
+    </p>
+    <p>Botón inactivo</p>
+    <p>
+      <div class="e-button e-inactive"><i class="fa fa-automobile"></i>  Button</div>
+    </p>
+  </div>
+  <h3 class="e-center">Otros</h3>
+  <div class="e-content">
+    <p>A continuación se muestran clases de apoyo</p>
+    <p>
+      <b>.e-pointer</b> coloca <i>cursor:pointer</i> al elemento al que se le asigne.
+      <span class="e-pointer"><b>Pasar mouse por encima de este texto</b></span>
+    </p>
+    <p>
+      <b>.e-hidden</b> coloca <i>display:none</i> al elemento al que se le asigne para que no sea visible.
+    </p>
+    <p>
+      <b>.e-min-lg</b> hace que el elemento solo se vea en pantallas con mas de 1023px de ancho.
+    </p>
+    <p>
+      <b>.e-min-md</b> hace que el elemento solo se vea en pantallas con mas de 767px de ancho.
+    </p>
+    <p>
+      <b>.e-min-sm</b> hace que el elemento solo se vea en pantallas con mas de 479px de ancho.
+    </p>
+  </div>
+</div>

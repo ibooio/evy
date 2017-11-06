@@ -131,7 +131,7 @@ html, body{
 /*
   * Containers
 */
-.e-container{ max-width: 1200px; margin: 0 auto; padding: 0 4%;}
+.e-container{ max-width: 1200px; margin: 0 auto; padding: 0 4%; overflow: hidden;}
 
 .e-content{ padding: 10px; }
 
@@ -548,16 +548,19 @@ html, body{
   background-color: #464748;
   color: #b3b2b2;
   padding-top: 20px;
+  padding-left: 10px;
 }
 
 .e-menu-sidebar-content{
   margin-left: 200px;
+  padding-top: 20px;
 }
 
 .e-menu-sidebar .e-item{
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
+  cursor: pointer;
 }
 .e-menu-sidebar .e-item:hover{
   background-color: #333;
@@ -568,7 +571,6 @@ html, body{
   color: #fff;
   display: inline-block;
   width: 100%;
-  padding-left: 20px;
 }
 
 
