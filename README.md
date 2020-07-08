@@ -1,5 +1,5 @@
 # Evy v0.1
-A simple front-end framework
+Pequeña librería js/css
 
 ## Componentes funcionales
 * Window
